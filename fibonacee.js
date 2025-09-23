@@ -37,6 +37,17 @@ function fibonacciDQ(num){
 }
 console.log(fibonacciDQ(9));
 
+    //đếm countdown
+    function demNguoc(dem){
+        if(dem>0){
+            console.log(dem);
+            return demNguoc(dem-1);
+        }return dem;
+
+    }
+
+    demNguoc(10);
+
 /*Tính lũy thừa
 Tính giá trị của x mũ n (x^n) với n là số nguyên không âm.
 Định nghĩa toán học:
