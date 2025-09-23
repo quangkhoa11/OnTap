@@ -63,7 +63,7 @@ Tính giá trị của x mũ n (x^n) với n là số nguyên không âm.
         return tinh;
     }
     console.log("Lũy thừa của 2 mũ 7 là: ",luyThua2(2,7));
-
+//Cách 2 đệ quy
     function luyThua(x,n){
         if(n===0) return 1;
         if(n>0){
