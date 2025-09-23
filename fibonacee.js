@@ -1,4 +1,4 @@
-//Dùng For
+//Dùng for
 function fibonacci(n){
     let soDau = 0;
     let soHai = 1;
