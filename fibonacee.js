@@ -55,6 +55,15 @@ Tính giá trị của x mũ n (x^n) với n là số nguyên không âm.
     x^n = x * x^(n-1) với n > 0 (Bước đệ quy)
  */
 
+//Cách 1 
+ function luyThua2(x1,n1){
+        let tinh;
+        if(n1===0) return 1;
+        tinh = Math.pow(x1,n1);
+        return tinh;
+    }
+    console.log("Lũy thừa của 2 mũ 7 là: ",luyThua2(2,7));
+
     function luyThua(x,n){
         if(n===0) return 1;
         if(n>0){
