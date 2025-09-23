@@ -52,3 +52,20 @@ Tính giá trị của x mũ n (x^n) với n là số nguyên không âm.
         return n;
     }
     console.log("Lũy thừa của 2 mũ 5 là: ",luyThua(2,2));
+
+
+/*Bài tập tính giai thừa
+Bài toán tính giai thừa của một số nguyên dương n (ký hiệu n!). Định nghĩa toán học của giai thừa là:
+    0! = 1 (Trường hợp cơ sở)
+    n! = n * (n-1)! với n > 0 (Bước đệ quy)
+*/
+function tinhGiaiThua(n){
+    if(n===0){
+        return 1;
+    }
+    if(n>0){
+        return n * tinhGiaiThua(n - 1);
+    }
+    return n;
+}
+console.log("Giai thừa của 5 là: ", tinhGiaiThua(5));
