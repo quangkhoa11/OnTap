@@ -36,8 +36,18 @@ function fibonacciDQ(num){
     }
 }
 console.log(fibonacciDQ(9));
-
+    
     //đếm countdown
+// Dùng for
+
+   function demNguoc2(dem){
+        for(let i = dem; i>0; i--){
+           console.log(i);
+        }
+    }
+    demNguoc2(10);
+
+//đệ quy
     function demNguoc(dem){
         if(dem>0){
             console.log(dem);
