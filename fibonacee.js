@@ -36,3 +36,19 @@ function fibonacciDQ(num){
     }
 }
 console.log(fibonacciDQ(9));
+
+/*Tính lũy thừa
+Tính giá trị của x mũ n (x^n) với n là số nguyên không âm.
+Định nghĩa toán học:
+    x^0 = 1 (Trường hợp cơ sở)
+    x^n = x * x^(n-1) với n > 0 (Bước đệ quy)
+ */
+
+    function luyThua(x,n){
+        if(n===0) return 1;
+        if(n>0){
+            return x * luyThua(x,(n-1));
+        }
+        return n;
+    }
+    console.log("Lũy thừa của 2 mũ 5 là: ",luyThua(2,2));
