@@ -71,7 +71,7 @@ Tính giá trị của x mũ n (x^n) với n là số nguyên không âm.
         }
         return n;
     }
-    console.log("Lũy thừa của 2 mũ 5 là: ",luyThua(2,2));
+    console.log("Lũy thừa của 2 mũ 2 là: ",luyThua(2,2));
 
 
 /*Bài tập tính giai thừa
