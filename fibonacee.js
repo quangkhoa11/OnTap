@@ -79,6 +79,18 @@ Bài toán tính giai thừa của một số nguyên dương n (ký hiệu n!).
     0! = 1 (Trường hợp cơ sở)
     n! = n * (n-1)! với n > 0 (Bước đệ quy)
 */
+//Cách 1 for
+function giaiThua2(n){ //5
+    let a = 1;
+    if(n===0) return a;
+    for(let i =1; i<=n; i++){
+        a = a * i;
+    }
+    return a;
+    }
+console.log("Kết quả: ",giaiThua2(5));
+
+//Cách 2 đệ quy
 function tinhGiaiThua(n){
     if(n===0){
         return 1;
