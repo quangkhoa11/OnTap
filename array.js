@@ -123,7 +123,7 @@ let n = Number(prompt("Nhập phần tử có trong mảng: "));
 console.log("Mảng: ",taoMang1(n));
 
 //Viết chương trình tạo 1 mảng 1 chiều gồm các phần tử là số nguyên, có n phần tử ngẫu nhiên,
-//n do người dùng nhập
+//n do người dùng nhập. Xuất các giá trị trong mảng.
 function randomArr(num){
     let arr1 = [];
     for(let i = 0; i<num; i++){
