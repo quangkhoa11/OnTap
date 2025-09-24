@@ -76,3 +76,39 @@ let mang7 = [1,2,3,4];
 let lBo = mang7.shift();
 console.log("Mảng sau khi bỏ là: ",mang7); //[2,3,4]
 console.log("Phần tử bị loại bỏ trong mảng là: ",lBo); //[1]
+//6. slice(start,end): sao chép mảng -3nd
+let mang8 = new Array(1,2,3,4,5);
+console.log("Sau sao chép là: ",mang8.slice(0,3)); //[1,2,3]
+//7. includes(): kiểm tra trong mảng có chứa giá trị tồn tại hay không?
+let mang9 = new Array(1,23,5,6,"ttpd");
+let k = mang9.includes('ttpd');
+console.log("Kết quả tìm kiếm là: ",k); //23 có nằm trong mảng -> true
+//8. indexOf(): kiểm tra giá trị trong mảng có index vị trí là bao nhiêu (-1 nếu k tìm thấy)
+let mang10 = new Array(1,2,3,4,'nun',5,'nun'); 
+let cH= mang10.indexOf('nun'); 
+console.log(cH); //kết quả = 4 => vì 'nun' xuất hiện đầu tiên tại index =4
+//9. lastIndexOf(): trả về vị trí index của phần tử xuất hiện cuối cùng trong mảng 
+let cH2 = mang10.lastIndexOf('nun');
+console.log(cH2); // kết quả = 6 => vì 'nun' xuất hiện cuối cùng tại index = 6
+//10. reverse(): đảo ngược thứ tự của mảng (làm toán kiểm tra input palindrome)
+console.log(mang10);
+let reverseT = mang10.reverse();
+console.log(reverseT); //[ "nun", 5, "nun", 4, 3, 2, 1 ]
+//11. join(): nối các phần tử với nhau bằng các ký tự truyền vào
+let mangTest = new Array(1,2,3,'Nhat', 'Khang');
+let test1 = mangTest.join(); //mặc định là dấu , ngăn cách nhau giữa các phần tử trong mảng
+let test2 = mangTest.join(' * '); //ngăn cách dấu * giữa các phần tử có trong mảng
+console.log("Kết quả join không truyền: ",test1);
+console.log("Kết quả truyền * vào: ",test2);
+
+
+//Bài tập vận dụng:
+//BT1: Cho mảng chứa các phần tử 1,2,3,4,5. Giữ nguyên mảng ban đầu và
+//tạo ra bản sao đảo ngược của các phần tử mảng trên.
+let mangBT1 = [1,2,3,4,5];
+let banSaoMang = mangBT1.slice().reverse();
+console.log("Mảng ban đầu: ",mangBT1);
+console.log("Mảng sau đổi: ",banSaoMang);
+/*BT2: Kiểm tra input là palindrome hay không? Nếu đối xứng =>yes
+Nếu sai thì No.
+VD: ABCBA => yes; ABCA => no*/
