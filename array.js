@@ -109,6 +109,19 @@ let mangBT1 = [1,2,3,4,5];
 let banSaoMang = mangBT1.slice().reverse();
 console.log("Mảng ban đầu: ",mangBT1);
 console.log("Mảng sau đổi: ",banSaoMang);
+//BT: Viết chương trình tạo mảng 1 chiều gồm các phần tử là số nguyên có n phần tử, n do người 
+//dùng nhập vào bàn phím
+function taoMang1(n){
+    let mang = new Array();
+    for(let i = 0; i<n; i++){
+        let nhapPT = Number(prompt(`Nhập phần tử thứ ${i}`));
+        mang.push(nhapPT);
+    }
+    return mang;
+}
+let n = Number(prompt("Nhập phần tử có trong mảng: "));
+console.log("Mảng: ",taoMang1(n));
+
 /*BT2: Kiểm tra input là palindrome hay không? Nếu đối xứng =>yes
 Nếu sai thì No.
 VD: ABCBA => yes; ABCA => no*/
