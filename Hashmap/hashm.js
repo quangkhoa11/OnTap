@@ -64,3 +64,21 @@ function timTT(ten){
 }
 let ten = "Lê Quang Khoa";
 timTT(ten);
+/*Bài tập 5: Cho một HashMap lưu tên → tuổi. Hãy tạo ra HashMap mới với tuổi → danh sách tên. */
+let tenTuoi = {
+    "Khoa": 11,
+    "Quang": 12,
+    "Nhi": 13,
+    "Châu": 14,
+    "Hùng": 11
+};
+let h1 = {};
+for (let ten in tenTuoi) {
+    let tuoi = tenTuoi[ten];  
+    if (!h1[tuoi]) { 
+        h1[tuoi] = [];  
+    }
+    h1[tuoi].push(ten); 
+}
+console.log(tenTuoi);
+console.log(h1);
