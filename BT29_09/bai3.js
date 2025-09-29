@@ -6,20 +6,19 @@ Kết quả: Map{
 5 => ['three'],
 4 => ['four']
 }*/
-function fn1(mang){
+function fn(arr){
     let map = new Map();
-    for(chuoi of mang){
+    for(chuoi of arr){
         let doDai = chuoi.length;
         if(!map.has(doDai)){
             map.set(doDai, []);
         }
         map.get(doDai).push(chuoi);
     }
-    for(let [key, value] of map){
+    for(let [key,value] of map){
         console.log(key, "=>", value);
     }
     return map;
-}
 
-let mang = ["one","two","three","four","six"];
-fn1(mang);
+}
+fn(["one","two","three","four","six"])

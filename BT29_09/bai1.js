@@ -19,7 +19,7 @@ function mostFrequent(arr){
 
     for(let so in freq){
         if(freq[so] === demFre){
-            kq.push(so); 
+            kq.push(Number(so)); 
         }
     }
 
