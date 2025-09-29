@@ -2,31 +2,31 @@
 trong mảng. Nếu có nhiều phần tử cùng số lần, trả về mảng các phần tử đó.
 VD: mostFrequent([1,2,2,3,3,4,5,3,2]) => Kết quả [2,3]*/
 function mostFrequent(arr){
-    let freq = new Map();
-    let maxFreq = 0;
+    let freq = {};       
+    let demFre = 0;     
+    let kq = [];    
 
     for(let so of arr){
-        let dem = (freq.get(so) || 0) + 1;
-        freq.set(so, dem);
+        if(freq[so]){        
+            freq[so]++;
+        } else {             
+            freq[so] = 1;
+        }
+        if(freq[so] > demFre){   
+            demFre = freq[so];
+        }
+    }
 
-        if(dem > maxFreq){
-            maxFreq = dem;
+    for(let so in freq){
+        if(freq[so] === demFre){
+            kq.push(so); 
         }
     }
-    let kq = [];
-    for(let [key1, value1] of freq){
-        if(value1 === maxFreq){
-            kq.push(key1);
-        }
-    }
+
     return kq;
 }
-
 let arr = [1,2,2,3,3,4,5,3,2];
-console.log(mostFrequent(arr)); 
-
-
-
+console.log(mostFrequent(arr));
 /*2. Cho 2 mảng số nguyên, hãy trả về một mảng chứa các phần tử chung của cả hai
 (Không trùng lăp).
 VD: fn([1,2,3,4], [3,4,5,6]) = Kết quả: [3,4]*/
