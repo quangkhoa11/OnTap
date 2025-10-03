@@ -1,3 +1,4 @@
+<title>Đăng nhập</title>
 <?php
     $obj=new database();
     if(isset($_POST['btnDangNhap'])){

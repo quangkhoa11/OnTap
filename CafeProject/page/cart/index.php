@@ -1,4 +1,4 @@
-
+<title>Giỏ hàng</title>
 <main class="flex-1 container mx-auto px-4 py-12">
   <h1 class="text-3xl font-bold mb-8 text-center text-orange-500">GIỎ HÀNG</h1>
   <div id="cart-container" class="space-y-4"></div>

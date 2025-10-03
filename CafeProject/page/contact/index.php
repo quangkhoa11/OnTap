@@ -1,3 +1,4 @@
+<title>Liên hệ</title>
 <main class="flex-1 container mx-auto px-4 py-12">
         <h1 class="text-3xl font-bold text-center text-orange-600 mb-8">LIÊN HỆ VỚI CHÚNG TÔI</h1>
 

@@ -1,3 +1,4 @@
+<title>Chi tiết đơn hàng</title>
 <main class="flex-1 container mx-auto px-4 py-12">
       <h1 class="text-3xl font-bold mb-8 text-center text-orange-500">CHI TIẾT ĐƠN HÀNG</h1>
 
@@ -17,26 +18,4 @@
 
     </main>
 
-    <script>
-            const order = JSON.parse(localStorage.getItem('currentOrder'));
-    if(!order){
-      alert('Không có đơn hàng nào!');
-      window.location.href = 'index.php?page=cart';
-    } else {
-      document.getElementById('cust-name').innerText = order.customer.name;
-      document.getElementById('cust-phone').innerText = order.customer.phone;
-      document.getElementById('cust-address').innerText = order.customer.address;
-
-      const itemsContainer = document.getElementById('order-items');
-      order.items.forEach(item => {
-        const div = document.createElement('div');
-        div.className = "flex justify-between border-b pb-1";
-        div.innerHTML = `<span>${item.name} x ${item.quantity}</span> <span>${(item.price * item.quantity).toLocaleString()} VND</span>`;
-        itemsContainer.appendChild(div);
-      });
-
-      document.getElementById('order-total').innerText = order.total.toLocaleString();
-
-      localStorage.removeItem('currentOrder');
-    }
-    </script>
+<script src="./assets/js/order-detail.js"></script>
