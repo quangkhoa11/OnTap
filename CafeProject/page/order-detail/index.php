@@ -13,7 +13,7 @@
 
         <p class="text-xl font-semibold mt-4">Tổng cộng: <span id="order-total"></span> VND</p>
       </div>
-      <div class="text-center mt-6"><a href="index.php?page=menu" class="inline-block bg-orange-500 text-white font-semibold py-2 px-6 rounded-lg shadow hover:bg-orange-600 transition transform hover:scale-105 p-5">Quay lại</a>
+      <div class="text-center mt-6"><a href="index.php?page=menu" class="inline-block bg-orange-500 text-white font-semibold py-2 px-6 rounded-lg shadow hover:bg-orange-600 transition transform hover:scale-105 p-5">Đặt ngay</a>
 </div>
 
     </main>
